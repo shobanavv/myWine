@@ -1,0 +1,70 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head> 
+<title>myWine 2.0</title>
+    
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="apple-touch-icon" href="assets/images/myWineIcon.png" />
+	
+	<link href="assets/css/jquery.mobile-1.0.1.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+    
+	<script src="assets/js/jquery-1.7.1.js" ></script>
+	<script src="assets/js/persistence.js"></script>
+	<script src="assets/js/persistence.store.sql.js"></script>
+    <script src="assets/js/persistence.store.websql.js"></script>
+	<script src="assets/js/persistence.store.memory.js"></script>
+    
+    <script>
+	<!-- CODE 1.3 -->
+    $(document).bind('mobileinit',function() {
+        $.mobile.page.prototype.options.addBackBtn = true;
+    });
+	
+  	</script>
+   
+  <script src="assets/js/jquery.mobile-1.0.1.js" ></script>
+  
+</head> 
+<body> 
+    
+   <!-- CODE 1.1, 1.2, 1.5 
+    <div id="home" data-role = "page" data-theme = "w">
+ 
+        <div data-role = "header" data-theme = "w">
+            <h1>myWine</h1>
+             <a href="#add" data-icon = "plus" data-transition = "slideup" class = "ui-btn-right"> Add Wine </a>
+        </div>
+    
+        <div data-role = "content" data-theme = "e">	
+            <ul id="wineList" data-role = "listview" data-theme = "b">
+        	    <li>Wines</li>
+    		   
+            </ul>	
+        </div>
+    
+    </div>-->
+    
+      
+    <!-- CODE 1.4 -->  
+    <div id="home" data-role = "page" data-theme = "w">
+    
+        <div data-role = "header" data-theme = "w">
+            <h1> My Wine</h1>
+            <a href="#add" data-icon = "plus" data-transition = "slideup" class = "ui-btn-right"> Add Wine </a>
+        </div>
+        
+        <div data-role = "content" data-theme = "w">
+            <ul id = "wineList" data-role = "listview" data-theme = "w">
+                <li>Wines</li>
+                <li><a href="#">ACME Wines</a></li>
+            </ul>
+            
+        </div>
+    </div>
+    
+
+</body>
+</html>
